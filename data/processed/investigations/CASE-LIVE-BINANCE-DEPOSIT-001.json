@@ -1,0 +1,65 @@
+{
+  "case_id": "CASE-LIVE-BINANCE-DEPOSIT-001",
+  "suspect_address": "bc1p8y2uvfyu7azz4zkl45cza9cyc63q0g3hqgdes5wmzpr2rjq4axas80uelt",
+  "currency": "BTC",
+  "created_at_utc": "2026-10-18T20:07:16.643740+00:00",
+  "address_validation": {
+    "raw": "bc1p8y2uvfyu7azz4zkl45cza9cyc63q0g3hqgdes5wmzpr2rjq4axas80uelt",
+    "canonical": "bc1p8y2uvfyu7azz4zkl45cza9cyc63q0g3hqgdes5wmzpr2rjq4axas80uelt",
+    "network": "BTC",
+    "format": "bech32m_taproot",
+    "is_valid": true
+  },
+  "direct_exchange_attribution": null,
+  "suspect_prior_abuse_flags": [],
+  "transaction_graph_status": {
+    "transactions_indexed": 184,
+    "graph_loaded": true,
+    "network_fetching_enabled": true,
+    "network_fetch_status": "SUCCESS",
+    "has_more": true,
+    "total_fetched": 206,
+    "error_message": null
+  },
+  "network_fetch_metadata": {
+    "enabled": true,
+    "adapter_name": "EsploraBitcoinAdapter",
+    "status": "SUCCESS",
+    "addresses_queried": [
+      "bc1p8y2uvfyu7azz4zkl45cza9cyc63q0g3hqgdes5wmzpr2rjq4axas80uelt",
+      "bc1pnvu4zl5kfc4cke8cm3a69ensy7p35ltzn5rtp5utt5g0teyyrdaqudqnaz",
+      "bc1qkvusg7cjtxf3nn5sglzpy3d2a4f46nzwy0s04f",
+      "bc1qm5d0yzqwqv8lluhpv56sj9h0fefafty7rvr4h7",
+      "bc1qxx8ch8v60lsx96a6sdsu3glzplth7jjn69ekam",
+      "bc1qjph9uuc8xqj4h24qwmjhkey054g0el9vd6qg632rc7edvxk8qajqmphhz3",
+      "bc1qcxwc46wuzqx3ekwtl7dem60wutnm2wx82max9u",
+      "bc1pds3s9gnaf3m0t5vgtlq8qdvk3jtwdrhj6h55c2t05nkzs0zqeh8q73j797",
+      "bc1p76w3l6zf2u5sy258wlwxcptjuefea8pwpcddahw62tu2zzjcvhqqzrln24",
+      "bc1ptnxf8aal3apeg8r4zysr6k2mhadg833se2dm4nssl7drjlqdh2jqa4tk3p"
+    ],
+    "total_transactions_fetched": 206,
+    "has_more": true,
+    "cached": false,
+    "error_message": null,
+    "provenance_base_url": "https://blockstream.info/api"
+  },
+  "total_paths_traced": 361082,
+  "exchange_connections": [
+    {
+      "exchange_name": "binance",
+      "attribution_confidence": "service_data",
+      "source_disclosure": "https://www.binance.com/en/blog/community/our-commitment-to-transparency-2895840147147652626",
+      "destination_wallet": "34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo",
+      "destination_label": "binance reserve wallets BTC",
+      "is_reserve_wallet": true,
+      "path_count": 30,
+      "min_hop_distance": 1,
+      "total_taint_received": 0.0001638,
+      "taint_currency": "BTC",
+      "finding_type": "TRANSACTION_CONNECTION_ESTABLISHED",
+      "evidentiary_note": "Evidence indicates funds from the suspect address reached an address controlled by this exchange via one or more transaction hops. This establishes a transaction connection / deposit flow; it does NOT prove that the exchange entity itself is fraudulent."
+    }
+  ],
+  "aml_transaction_risk_note": "Offline Elliptic Random Forest model requires the full 165 graph/local feature vector. Raw on-chain transactions cannot be directly scored without running the full Elliptic topological feature extraction pipeline. Behavioral AML scores are kept strictly distinct from verified exchange entity identity.",
+  "disclaimer": "All exchange attributions are derived strictly from verified external disclosures (GraphSense service disclosures and EtherScamDB). No exchange identities or fraud linkages were synthetically assumed or inferred from transaction risk classes."
+}

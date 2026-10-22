@@ -1,0 +1,102 @@
+{
+  "txid": "e94223c288c558a64ae04e64fb7861a3c7b00984568d8abab4e4a5dfc944332a",
+  "version": 2,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "a7baa500ec76a7e814976b5db7c9c51f00d3733dc69f9fdda9ed409633fc4e44",
+      "vout": 1,
+      "prevout": {
+        "scriptpubkey": "0014f093137dd4fcd7b0317f55d4634b35fe0c06bde6",
+        "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 f093137dd4fcd7b0317f55d4634b35fe0c06bde6",
+        "scriptpubkey_type": "v0_p2wpkh",
+        "scriptpubkey_address": "bc1q7zf3xlw5lntmqvtl2h2xxje4lcxqd00xypyew3",
+        "value": 546
+      },
+      "scriptsig": "",
+      "scriptsig_asm": "",
+      "witness": [
+        "3045022100b3c33cde4dff1a0b0ed76df1b63da72b7ef315eaede1846497b9bed9b71834e002200a4812726635ffcdb6f110539b579aad1008a06cc3d9b285818753114439961f01",
+        "026d8503af32e12c87e1e755ceab7571ac12d7291de56aa08e873f872823e3b2ea"
+      ],
+      "is_coinbase": false,
+      "sequence": 4294967293
+    },
+    {
+      "txid": "a7baa500ec76a7e814976b5db7c9c51f00d3733dc69f9fdda9ed409633fc4e44",
+      "vout": 2,
+      "prevout": {
+        "scriptpubkey": "0014c19d8ae9dc100d1cd9cbff9b9de9eee2e7b538c7",
+        "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 c19d8ae9dc100d1cd9cbff9b9de9eee2e7b538c7",
+        "scriptpubkey_type": "v0_p2wpkh",
+        "scriptpubkey_address": "bc1qcxwc46wuzqx3ekwtl7dem60wutnm2wx82max9u",
+        "value": 546
+      },
+      "scriptsig": "",
+      "scriptsig_asm": "",
+      "witness": [
+        "3045022100bbabd6615ab579bbf9cbad45d8ec7a2a1b01650dff0a1c98d2b205cc34459de402205c0af18b0ea47b8ab6df292b6493e1a68181035f6a8c9b0d83b97f9b1079c4bb01",
+        "036e9f5e67beeab9460207e7f8f6677d419120b07040352f16257c840c944c8b31"
+      ],
+      "is_coinbase": false,
+      "sequence": 4294967293
+    },
+    {
+      "txid": "ea11cdbc2a46829a67c0f5a719a766a875b47041baa989369fe1e5d85c754963",
+      "vout": 3,
+      "prevout": {
+        "scriptpubkey": "0014ac0b83b850be205fecb7eb90a84befdfef134d2b",
+        "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 ac0b83b850be205fecb7eb90a84befdfef134d2b",
+        "scriptpubkey_type": "v0_p2wpkh",
+        "scriptpubkey_address": "bc1q4s9c8wzshcs9lm9hawg2sjl0mlh3xnftf3nkmn",
+        "value": 38998
+      },
+      "scriptsig": "",
+      "scriptsig_asm": "",
+      "witness": [
+        "304502210098b8eb335514de2186b8f574168a211b061ec698ecf9c2bdbfc606ffb318dfaa02206a85b7bffddf26e5a0c134853b863a2d635021e19fadd3070c7d9a25394ad8d601",
+        "03defd15f7083751479f330b3fe8074034ff1a8de8bd12baebcbdfd46a05e1f26d"
+      ],
+      "is_coinbase": false,
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "scriptpubkey": "6a5d0e00de9436d80680e0acf581840102",
+      "scriptpubkey_asm": "OP_RETURN OP_PUSHNUM_13 OP_PUSHBYTES_14 00de9436d80680e0acf581840102",
+      "scriptpubkey_type": "op_return",
+      "value": 0
+    },
+    {
+      "scriptpubkey": "0014f093137dd4fcd7b0317f55d4634b35fe0c06bde6",
+      "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 f093137dd4fcd7b0317f55d4634b35fe0c06bde6",
+      "scriptpubkey_type": "v0_p2wpkh",
+      "scriptpubkey_address": "bc1q7zf3xlw5lntmqvtl2h2xxje4lcxqd00xypyew3",
+      "value": 546
+    },
+    {
+      "scriptpubkey": "0014b339047b12599319ce9047c41245aaed535d4c4e",
+      "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 b339047b12599319ce9047c41245aaed535d4c4e",
+      "scriptpubkey_type": "v0_p2wpkh",
+      "scriptpubkey_address": "bc1qkvusg7cjtxf3nn5sglzpy3d2a4f46nzwy0s04f",
+      "value": 546
+    },
+    {
+      "scriptpubkey": "0014ac0b83b850be205fecb7eb90a84befdfef134d2b",
+      "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 ac0b83b850be205fecb7eb90a84befdfef134d2b",
+      "scriptpubkey_type": "v0_p2wpkh",
+      "scriptpubkey_address": "bc1q4s9c8wzshcs9lm9hawg2sjl0mlh3xnftf3nkmn",
+      "value": 37996
+    }
+  ],
+  "size": 578,
+  "weight": 1334,
+  "fee": 1002,
+  "status": {
+    "confirmed": true,
+    "block_height": 950755,
+    "block_hash": "00000000000000000000078065a1b658924b63abb6a01e17985c612df3cc8ed7",
+    "block_time": 1779586286
+  }
+}

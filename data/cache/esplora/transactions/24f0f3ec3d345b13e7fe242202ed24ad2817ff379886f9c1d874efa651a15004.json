@@ -1,0 +1,101 @@
+{
+  "txid": "24f0f3ec3d345b13e7fe242202ed24ad2817ff379886f9c1d874efa651a15004",
+  "version": 2,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "59c40a78ccfddeee7e52fcef006f72eb968b338be2bfc11b32ced601605a1195",
+      "vout": 1,
+      "prevout": {
+        "scriptpubkey": "001424c2f93198f99064a274e93be7ce32559893ba25",
+        "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 24c2f93198f99064a274e93be7ce32559893ba25",
+        "scriptpubkey_type": "v0_p2wpkh",
+        "scriptpubkey_address": "bc1qynp0jvvclxgxfgn5aya70n3j2kvf8w3946zgkr",
+        "value": 546
+      },
+      "scriptsig": "",
+      "scriptsig_asm": "",
+      "witness": [
+        "3045022100ce345a311900596cdf61f90245d3a43c5963dedfc670ad67a47719719f073bf90220586948ad74ab942e1d5d94ed2e0c0f9c0e9deee606a99895215ed2bb6684796f01",
+        "037d784215ae28af9df800ac92b174656a4bbf75cf5ef13786c21f1eb1025fcb3b"
+      ],
+      "is_coinbase": false,
+      "sequence": 4294967295
+    },
+    {
+      "txid": "471845b726658f82f62748ca143c275334fb4d05c7dbe47534c5be881d2b5dc1",
+      "vout": 1,
+      "prevout": {
+        "scriptpubkey": "001424c2f93198f99064a274e93be7ce32559893ba25",
+        "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 24c2f93198f99064a274e93be7ce32559893ba25",
+        "scriptpubkey_type": "v0_p2wpkh",
+        "scriptpubkey_address": "bc1qynp0jvvclxgxfgn5aya70n3j2kvf8w3946zgkr",
+        "value": 546
+      },
+      "scriptsig": "",
+      "scriptsig_asm": "",
+      "witness": [
+        "304402201fe45ba4d47d0f97911a7b974e5df931b9ae07a2db6f8378daef904b507b050d022027da1cd94a3c377c2cfa08dea6d3bd2816744a125afc5f38ec4024e3e012a6c401",
+        "037d784215ae28af9df800ac92b174656a4bbf75cf5ef13786c21f1eb1025fcb3b"
+      ],
+      "is_coinbase": false,
+      "sequence": 4294967295
+    },
+    {
+      "txid": "59c40a78ccfddeee7e52fcef006f72eb968b338be2bfc11b32ced601605a1195",
+      "vout": 2,
+      "prevout": {
+        "scriptpubkey": "51205ccc93f7bf8f43941c7511203d595bbf5a83c630ca9bbace10ff9a397c0dbaa4",
+        "scriptpubkey_asm": "OP_PUSHNUM_1 OP_PUSHBYTES_32 5ccc93f7bf8f43941c7511203d595bbf5a83c630ca9bbace10ff9a397c0dbaa4",
+        "scriptpubkey_type": "v1_p2tr",
+        "scriptpubkey_address": "bc1ptnxf8aal3apeg8r4zysr6k2mhadg833se2dm4nssl7drjlqdh2jqa4tk3p",
+        "value": 50959676
+      },
+      "scriptsig": "",
+      "scriptsig_asm": "",
+      "witness": [
+        "cda0e2ec62edaffc205229ea7575ffcece96248e13ed48bf9592b6ce6f981b464cb966081bd57457aebe618f8e523b9859ca5eaeb5f91e6f83bc0ef52d0da9af"
+      ],
+      "is_coinbase": false,
+      "sequence": 4294967295
+    }
+  ],
+  "vout": [
+    {
+      "scriptpubkey": "6a5d0d00c0a233ce06dec3fffd9c0601",
+      "scriptpubkey_asm": "OP_RETURN OP_PUSHNUM_13 OP_PUSHBYTES_13 00c0a233ce06dec3fffd9c0601",
+      "scriptpubkey_type": "op_return",
+      "value": 0
+    },
+    {
+      "scriptpubkey": "51205ccc93f7bf8f43941c7511203d595bbf5a83c630ca9bbace10ff9a397c0dbaa4",
+      "scriptpubkey_asm": "OP_PUSHNUM_1 OP_PUSHBYTES_32 5ccc93f7bf8f43941c7511203d595bbf5a83c630ca9bbace10ff9a397c0dbaa4",
+      "scriptpubkey_type": "v1_p2tr",
+      "scriptpubkey_address": "bc1ptnxf8aal3apeg8r4zysr6k2mhadg833se2dm4nssl7drjlqdh2jqa4tk3p",
+      "value": 50827535
+    },
+    {
+      "scriptpubkey": "001424c2f93198f99064a274e93be7ce32559893ba25",
+      "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 24c2f93198f99064a274e93be7ce32559893ba25",
+      "scriptpubkey_type": "v0_p2wpkh",
+      "scriptpubkey_address": "bc1qynp0jvvclxgxfgn5aya70n3j2kvf8w3946zgkr",
+      "value": 132141
+    },
+    {
+      "scriptpubkey": "001424c2f93198f99064a274e93be7ce32559893ba25",
+      "scriptpubkey_asm": "OP_0 OP_PUSHBYTES_20 24c2f93198f99064a274e93be7ce32559893ba25",
+      "scriptpubkey_type": "v0_p2wpkh",
+      "scriptpubkey_address": "bc1qynp0jvvclxgxfgn5aya70n3j2kvf8w3946zgkr",
+      "value": 756
+    }
+  ],
+  "size": 546,
+  "weight": 1335,
+  "fee": 336,
+  "status": {
+    "confirmed": true,
+    "block_height": 969244,
+    "block_hash": "0000000000000000000105c6a4a635f3f75e932a855a5f07eb00b0fa2400b8dc",
+    "block_time": 1790737243
+  }
+}

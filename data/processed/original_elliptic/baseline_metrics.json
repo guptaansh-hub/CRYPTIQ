@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "dataset": "Original Elliptic",
+    "model": "RandomForestClassifier",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": null,
+      "class_weight": "balanced",
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "timestamp_utc": "2026-10-17T19:53:32.574832+00:00",
+    "python_version": "3.12.3",
+    "target_mapping": {
+      "1": "illicit (positive)",
+      "2": "licit (negative)",
+      "unknown": "excluded"
+    },
+    "temporal_split": {
+      "train_timesteps": "1-34",
+      "val_timesteps": "35-39",
+      "test_timesteps": "40-49"
+    }
+  },
+  "metrics": {
+    "train": {
+      "accuracy": 0.9998327423563257,
+      "confusion_matrix": {
+        "matrix": [
+          [
+            26427,
+            5
+          ],
+          [
+            0,
+            3462
+          ]
+        ],
+        "true_negatives_licit": 26427,
+        "false_positives_licit_as_illicit": 5,
+        "false_negatives_illicit_as_licit": 0,
+        "true_positives_illicit": 3462
+      },
+      "illicit_class": {
+        "precision": 0.9985578309777906,
+        "recall": 1.0,
+        "f1": 0.9992783951508154,
+        "support": 3462
+      },
+      "licit_class": {
+        "precision": 1.0,
+        "recall": 0.9998108353510896,
+        "f1": 0.9999054087288824,
+        "support": 26432
+      },
+      "macro_avg": {
+        "f1": 0.9995919019398489
+      },
+      "weighted_avg": {
+        "f1": 0.9998327947927325
+      },
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    "val": {
+      "accuracy": 0.988333940940576,
+      "confusion_matrix": {
+        "matrix": [
+          [
+            5013,
+            26
+          ],
+          [
+            38,
+            409
+          ]
+        ],
+        "true_negatives_licit": 5013,
+        "false_positives_licit_as_illicit": 26,
+        "false_negatives_illicit_as_licit": 38,
+        "true_positives_illicit": 409
+      },
+      "illicit_class": {
+        "precision": 0.9402298850574713,
+        "recall": 0.9149888143176734,
+        "f1": 0.927437641723356,
+        "support": 447
+      },
+      "licit_class": {
+        "precision": 0.9924767372797466,
+        "recall": 0.9948402460805715,
+        "f1": 0.9936570862239842,
+        "support": 5039
+      },
+      "macro_avg": {
+        "f1": 0.9605473639736701
+      },
+      "weighted_avg": {
+        "f1": 0.9882615171952237
+      },
+      "roc_auc": 0.989456512135988,
+      "pr_auc": 0.9561408783462482
+    },
+    "test": {
+      "accuracy": 0.9718347639484979,
+      "confusion_matrix": {
+        "matrix": [
+          [
+            10493,
+            55
+          ],
+          [
+            260,
+            376
+          ]
+        ],
+        "true_negatives_licit": 10493,
+        "false_positives_licit_as_illicit": 55,
+        "false_negatives_illicit_as_licit": 260,
+        "true_positives_illicit": 376
+      },
+      "illicit_class": {
+        "precision": 0.8723897911832946,
+        "recall": 0.5911949685534591,
+        "f1": 0.7047797563261481,
+        "support": 636
+      },
+      "licit_class": {
+        "precision": 0.9758207011996652,
+        "recall": 0.9947857413727721,
+        "f1": 0.9852119618797239,
+        "support": 10548
+      },
+      "macro_avg": {
+        "f1": 0.8449958591029361
+      },
+      "weighted_avg": {
+        "f1": 0.9692646368857973
+      },
+      "roc_auc": 0.888992861027039,
+      "pr_auc": 0.6672601435056836
+    }
+  },
+  "leakage_checks": {
+    "temporal_isolation": {
+      "pass": true,
+      "overlap_train_val": 0,
+      "overlap_train_test": 0,
+      "overlap_val_test": 0
+    },
+    "boundary_ordering": {
+      "pass": true,
+      "train_max_ts": 34,
+      "val_min_ts": 35,
+      "val_max_ts": 39,
+      "test_min_ts": 40,
+      "test_max_ts": 49
+    },
+    "graph_integrity": {
+      "edge_audit_available": true,
+      "total_edges": 234355,
+      "cross_timestep_edges": 0,
+      "cross_split_edges": 0,
+      "graph_temporal_isolation_pass": true
+    },
+    "dataset_level_caveats": {
+      "pre_standardization_leakage_note": "The published Elliptic dataset features (columns 2-166) were pre-standardized globally across all 49 time steps by the original dataset authors (Weber et al., 2019). While downstream Random Forest inference does not compute further scalers, this global normalization represents a published dataset-level caveat that cannot be undone without unscaled raw transaction metrics.",
+      "unknown_nodes_graph_role": "Unknown/unlabeled transactions (157,205 nodes) are excluded from training supervision, but their graph degree and flows contributed to the 72 aggregate features computed in the raw dataset. Because all graph edges are strictly intra-timestep (0 cross-timestep edges), no future unknown node information leaked into past time steps.",
+      "exchange_attribution_boundary": "CRITICAL LIMITATION (SIH26183): Binary transaction classification (illicit vs. licit) does NOT identify cryptocurrency exchanges. In the Elliptic dataset, Class 2 (licit) includes legitimate exchanges, miners, and merchants. Illicit classification indicates transaction-level AML risk (e.g. ransomware, darknet), NOT exchange identity or fraud linkage. Exchange identification requires separate wallet clustering, deposit address reuse tracing, and off-chain attribution datasets."
+    }
+  }
+}

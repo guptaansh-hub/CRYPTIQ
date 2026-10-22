@@ -1,0 +1,7 @@
+{
+  "_README": "Class codes are NOT interpreted until a human confirms them. Run the audit, look at the class values and counts, check the Elliptic++ documentation / paper, then set confirmed=true. While confirmed=false the pipeline keeps class_raw only and leaves label empty.",
+  "confirmed": false,
+  "tx_classes": {"1": "illicit", "2": "licit", "3": "unknown"},
+  "wallet_classes": {"1": "illicit", "2": "licit", "3": "unknown"},
+  "_note": "The mapping above is the commonly documented Elliptic/Elliptic++ coding (1=illicit, 2=licit, 3=unknown). It could not be verified from the schema report alone."
+}

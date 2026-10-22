@@ -1,0 +1,27 @@
+{
+  "model_name": "RandomForestClassifier",
+  "saved_path": "D:\\cryptiq-data\\cryptiq-data\\models\\original_elliptic_rf.joblib",
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": null,
+    "class_weight": "balanced",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "n_features": 165,
+  "classes": [
+    0,
+    1
+  ],
+  "created_at_utc": "2026-10-17T19:53:32.801416+00:00",
+  "performance_summary": {
+    "val_illicit_f1": 0.927437641723356,
+    "val_illicit_precision": 0.9402298850574713,
+    "val_illicit_recall": 0.9149888143176734,
+    "test_illicit_f1": 0.7047797563261481,
+    "test_illicit_precision": 0.8723897911832946,
+    "test_illicit_recall": 0.5911949685534591,
+    "test_roc_auc": 0.888992861027039,
+    "test_pr_auc": 0.6672601435056836
+  }
+}

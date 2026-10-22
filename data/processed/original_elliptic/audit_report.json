@@ -1,0 +1,44 @@
+{
+  "dataset": "Original Elliptic",
+  "checks": {
+    "features": {
+      "rows": 203769,
+      "columns": 167,
+      "null_transaction_ids": 0,
+      "duplicate_transaction_ids": 0,
+      "null_feature_cells": 0,
+      "nonfinite_feature_cells": 0
+    },
+    "time_steps": {
+      "null_time_steps": 0,
+      "distinct_time_steps": 49,
+      "minimum": 1,
+      "maximum": 49
+    },
+    "classes": {
+      "rows": 203769,
+      "unique_transaction_ids": 203769,
+      "null_transaction_ids": 0,
+      "duplicate_transaction_ids": 0,
+      "class_counts": {
+        "unknown": 157205,
+        "2": 42019,
+        "1": 4545
+      },
+      "numeric_class_mapping_confirmed": false
+    },
+    "feature_class_id_coverage": {
+      "feature_ids_missing_from_classes": 0,
+      "class_ids_missing_from_features": 0
+    },
+    "edges": {
+      "rows": 234355,
+      "duplicate_edges": 0,
+      "self_loops": 0,
+      "null_source_ids": 0,
+      "null_target_ids": 0,
+      "source_ids_missing_from_features": 0,
+      "target_ids_missing_from_features": 0
+    }
+  }
+}

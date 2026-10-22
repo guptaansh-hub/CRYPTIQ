@@ -1,0 +1,41 @@
+{
+  "case_id": "CASE-LIVE-GENESIS-NO-PATH-002",
+  "suspect_address": "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+  "currency": "BTC",
+  "created_at_utc": "2026-10-18T20:08:12.932077+00:00",
+  "address_validation": {
+    "raw": "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+    "canonical": "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+    "network": "BTC",
+    "format": "p2pkh",
+    "is_valid": true
+  },
+  "direct_exchange_attribution": null,
+  "suspect_prior_abuse_flags": [],
+  "transaction_graph_status": {
+    "transactions_indexed": 25,
+    "graph_loaded": true,
+    "network_fetching_enabled": true,
+    "network_fetch_status": "SUCCESS",
+    "has_more": true,
+    "total_fetched": 27,
+    "error_message": null
+  },
+  "network_fetch_metadata": {
+    "enabled": true,
+    "adapter_name": "EsploraBitcoinAdapter",
+    "status": "SUCCESS",
+    "addresses_queried": [
+      "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"
+    ],
+    "total_transactions_fetched": 27,
+    "has_more": true,
+    "cached": false,
+    "error_message": null,
+    "provenance_base_url": "https://blockstream.info/api"
+  },
+  "total_paths_traced": 0,
+  "exchange_connections": [],
+  "aml_transaction_risk_note": "Offline Elliptic Random Forest model requires the full 165 graph/local feature vector. Raw on-chain transactions cannot be directly scored without running the full Elliptic topological feature extraction pipeline. Behavioral AML scores are kept strictly distinct from verified exchange entity identity.",
+  "disclaimer": "All exchange attributions are derived strictly from verified external disclosures (GraphSense service disclosures and EtherScamDB). No exchange identities or fraud linkages were synthetically assumed or inferred from transaction risk classes."
+}
